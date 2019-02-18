@@ -31,6 +31,9 @@ public class ActivityLifecycleCallbacksImpl implements Application.ActivityLifec
                 ((FragmentActivity)activity).getSupportFragmentManager().registerFragmentLifecycleCallbacks(fragmentLifecycleCallbacks,true);
             }
         }
+        if(autoAdaptStrategy != null){
+            autoAdaptStrategy.appleyAdapt(activity,activity);
+        }
     }
 
     @Override

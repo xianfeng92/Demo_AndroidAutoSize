@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.example.autosize.AutoSize;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        AutoSize.autoConvertDensityOfGlobal(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
